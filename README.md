@@ -1,1 +1,1 @@
-1. created btn component
+1. created button component
