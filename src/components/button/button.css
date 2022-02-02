@@ -11,19 +11,12 @@
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease;
-}
-
-.btn--primary--solid {
     background-color: var(--btn--primary);
     color: var(--white);
     border: none;
-}
-
-.btn--medium {
     padding: 10px 30px;
     font-size: 18px;
 }
-
 .btn:hover {
     background-color: var(--btn--hover) ; 
 }
