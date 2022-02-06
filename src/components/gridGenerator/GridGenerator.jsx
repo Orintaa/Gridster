@@ -1,31 +1,20 @@
-import React from "react";
-import { Button } from "../button/Button";
-import { Input } from "../input/Input";
-// import RandomNumber from "./assets/utils/RandomNumber.js";
+import React, {useState} from "react";
+import {Button} from "../button/Button";
+import {Input} from "../input/Input";
 
-class GridGenerator extends React.Component {
-    constructor(props) {
-        super(props);
-        this.firstInput = React.createRef();
-        this.secondInput = React.createRef();
+export const GridGenerator = () => {
+    const [rows, setRows] = useState(10)
+
+    const onFormSubmit = (e) => {
+        e.preventDefault()
+        console.log(rows)
     }
 
-    generate = () => {
-        this.firstInput.randomizeValue();      
-        this.secondInput.randomizeValue();       
-  };
-
-    render() {
     return (
-      <div>
-        <Input label={"Rows"} inputState={this.state.useState} setInputState={this.state.setInputState} ref={this.firstInput} />
+        <form onSubmit={onFormSubmit}>
+            <Input label={"Rows"} value={rows} onChange={setRows} name="rows"/>
 
-        <Input label={"Columns"} inputState={this.state.useState} setInputState={this.state.setInputState} ref={this.secondInput}/>
-
-        <Button onClick={this.generate} type="button"></Button>
-      </div>
+            <Button type="submit">PressMePlease</Button>
+        </form>
     );
-  }
 }
-
-module.exports = GridGenerator;

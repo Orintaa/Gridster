@@ -1,28 +1,18 @@
-import React, { useState } from "react";
 import "./input.css";
-import RandomNumber from "../../assets/utils/RandomNumber";
 
-export const Input = ({label}) => {
-  const [inputState, setInputState] = useState();
-//   const [inputState, setInputState] = useState(RandomNumber());
-
-    const randomizeValue = () => {
-        setInputState(RandomNumber());
-    };
-
+export const Input = ({label, value, name, onChange}) => {
   return (
-    <form class="form">
-      <div class="form-container">
-        <label class="label">{label}</label>
+      <div className="form-container">
+        <label className="label" htmlFor={name}>{label}</label>
         <input
-          class="input"
+            className="input"
           type="text"
-          value={inputState}
+            name={name}
+          value={value}
           onChange={(e) => {
-            setInputState(e.target.value);
+              onChange(e.target.value);
           }}
         />
       </div>
-    </form>
   );
 };
