@@ -1,0 +1,48 @@
+.form {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 22vh;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    background-color: #e7e3e3;
+    font-family: "Roboto", sans-serif;
+    color: #808080;
+}
+
+.form .elementBetweenInput {
+    padding-top: 2vh;
+}
+
+@media only screen and (min-width: 426px) {
+    .form {
+        font-size: 0.75rem;
+        padding-left: 2vw;
+    }
+    
+    .form .elementBetweenInput {
+        padding-top: 3vh;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .form {
+        font-size: 0.9rem;
+        padding-left: 2vw;
+    }
+    
+    .form .elementBetweenInput {
+        padding-top: 3vh;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .form {
+        font-size: 1.2rem;
+        padding-left: 2vw;
+    }
+    
+    .form .elementBetweenInput {
+        padding-top: 3vh;
+    }
+}

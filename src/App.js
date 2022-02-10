@@ -1,4 +1,3 @@
-// import {useRef} from "react";
 import "./App.css";
 import logo from "./logo.png";
 import {GridGenerator} from "./components/gridGenerator/GridGenerator";
