@@ -11,7 +11,7 @@ export const GridGenerator = () => {
     const [columns, setColumns] = useState(DEFAULT_CELL_COUNT);
     const onFormSubmit = (e) => {
         e.preventDefault();
-        console.log(rows);
+        console.log(rows, columns);
     };
 
     return (

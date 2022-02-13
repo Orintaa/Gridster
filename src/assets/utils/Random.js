@@ -1,10 +1,10 @@
-import { Button } from "../../components/button/Button"
+// import { Button } from "../../components/button/Button"
 
-const generateNumber = (e) => {
-    e.addEventListener('onClick'), () => {
+// const generateNumber = (e) => {
+//     e.addEventListener('onClick'), () => {
 
-    }
-    return
-}
+//     }
+//     return
+// }
 
-module.exports = generateNumber;
+// module.exports = generateNumber;
