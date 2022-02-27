@@ -3,15 +3,13 @@ import "./gridGenerator.css"
 import {Button} from "../button/Button";
 import {Input} from "../input/Input";
 
-const DEFAULT_CELL_COUNT = 10;
+export const GridGenerator = ({matrix, setMatrix}) => {
 
-export const GridGenerator = () => {
-   
-    const [rows, setRows] = useState(DEFAULT_CELL_COUNT);
-    const [columns, setColumns] = useState(DEFAULT_CELL_COUNT);
+    const [rows, setRows] = useState(matrix.rows);
+    const [columns, setColumns] = useState(matrix.columns);
     const onFormSubmit = (e) => {
         e.preventDefault();
-        console.log(rows, columns);
+        setMatrix({rows, columns})
     };
 
     return (
