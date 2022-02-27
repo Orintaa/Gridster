@@ -9,7 +9,7 @@ export const Gridster = () => {
         <div className="gridster">
             <img id="logo" src={logo} alt={""}></img>
         <GridGenerator/>
-        <Grid/>
+        <Grid rowCount={5} colCount={5}/>
         </div>
     )
 }

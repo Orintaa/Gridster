@@ -1,10 +1,9 @@
-// import { rowsCreating } from "../../assets/utils/rowsCreating"
 import "./rows.css";
 
-export const GridRow = (props) => {
+export const GridRow = ({children}) => {
     return (
         <div className="grid-row">
-            { props.gridSquares }
+            { children }
         </div>
     )
 }

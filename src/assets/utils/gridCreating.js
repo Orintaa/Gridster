@@ -1,6 +1,5 @@
 import { GridSquare } from "../../components/gridSquare/GridSquare";
 import { GridRow } from "../../components/rows/GridRow";
-// import { GridGenerator } from "../gridGenerator/GridGenerator";
 
 export const gridCreating = (rows, columns) => {
   const gridRows = [];
@@ -10,9 +9,9 @@ export const gridCreating = (rows, columns) => {
     /////////////////////////
       let row = [];
       for (let j = 0; j < columns; j++ ) {
-        row.push(<GridSquare/>); 
+        row.push(<GridSquare key={j}/>); 
       }
-      let gridRow = <GridRow gridSquares={ row } />
+      let gridRow = <GridRow children={ row } key={i}/>
 
     /////////////////////////
 
