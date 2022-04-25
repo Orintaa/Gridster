@@ -6,6 +6,14 @@
     border: 1px solid #c7bdbd;
 }
 
-.red{
-    background-color: red;
+.start{
+    background-color: #7ed321;
+}
+
+.end{
+    background-color: #639530;
+}
+
+.shortest-path{
+    background-color: #f5a623;
 }

@@ -1,5 +1,6 @@
 import { GridSquare } from "../gridSquare/GridSquare";
 import { GridRow } from "../rows/GridRow";
+import { rand } from "../../assets/utils/randomNumber";
 
 export const Grid = ({ rowCount, colCount }) => {
   const rows = new Array(rowCount).fill("");
@@ -7,7 +8,6 @@ export const Grid = ({ rowCount, colCount }) => {
 
   const startIndex = rand(0, rowCount - 1);
   const endIndex = rand(0, rowCount - 1);
-  // console.log('start', startIndex, 'end', endIndex);
 
   let isStartSquare = false;
   let isEndSquare = false;
@@ -28,12 +28,10 @@ export const Grid = ({ rowCount, colCount }) => {
 
                 isEndSquare = false;
                 if (keyA === endIndex) {
-                  console.log("foundid");
                   if (keyB === colCount - 1) {
                     isEndSquare = true;
                   }
                 }
-
               
               return (
                 <GridSquare
@@ -50,8 +48,3 @@ export const Grid = ({ rowCount, colCount }) => {
   );
 };
 
-function rand(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
