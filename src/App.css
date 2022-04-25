@@ -8,6 +8,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .grid-generator {
@@ -32,5 +33,4 @@
   display: flex;
   align-self: flex-start;
   width: 25vw;
-  margin: 1rem 0;
 }

@@ -6,8 +6,8 @@
 }
 
 .btn { 
-    width: 9rem;
-    height: 3rem;
+    width: 16vh;
+    height: 6vh;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     border-radius: 5px;
@@ -16,8 +16,8 @@
     background-color: var(--btn--primary);
     color: var(--white);
     border: none;
-    font-size: 0.9rem;
-    margin: 5vh 0 0 2vw;
+    font-size: 0.7rem;
+    margin: 5vh 0 2.5vh 2vw;
 }
 .btn:hover {
     background-color: var(--btn--hover) ; 
@@ -35,12 +35,12 @@
 
 @media only screen and (min-width: 769px) {
     .btn { 
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
 @media only screen and (min-width: 1025px) {
     .btn { 
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }

@@ -1,19 +1,21 @@
 .form {
     display: flex;
     align-items: center;
-    width: 500px;
-    height: 22vh;
+    width: 60vh;
+    height: 15vh;
     border-radius: 5px;
     font-size: 0.7rem;
     background-color: #e7e3e3;
     font-family: "Roboto", sans-serif;
     color: #808080;
+    margin: 2vh 0;
+    padding: 0 2vw;
 }
 
 .form .elementBetweenInput {
-    padding-top: 2vh;
+    margin: 2vh 2vh 0;
 }
-
+/* 
 @media only screen and (min-width: 426px) {
     .form {
         font-size: 0.75rem;
@@ -45,4 +47,4 @@
     .form .elementBetweenInput {
         padding-top: 3vh;
     }
-}
+} */
