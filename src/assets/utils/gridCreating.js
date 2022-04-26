@@ -3,8 +3,6 @@ import { GridRow } from "../../components/rows/GridRow";
 
 export const gridCreating = (numberOfRows, numberOfColumns) => {
   const gridRows = [];
-  // const randomStart = rand(1, 20);
-  // const randomEnd = rand(1, 20);
 
   for (let i = 0; i < numberOfRows; i++) {
 
@@ -18,10 +16,6 @@ export const gridCreating = (numberOfRows, numberOfColumns) => {
     /////////////////////////
 
       gridRows.push(gridRow);
-
-      // if(gridRow[i] === randomStart){
-      //   gridRow[0].classList.add('red');
-      // }
     }
 
     return gridRows;

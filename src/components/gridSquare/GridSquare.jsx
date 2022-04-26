@@ -13,7 +13,3 @@ export const GridSquare = (props) => {
         <div className={className}></div>
 )
 }
-
-
-// const classes = 'card ' + props.className;
-//     return  <div className={classes}>{props.children}</div>
